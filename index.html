@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+
+  <div class="diagram-providers">
+    <div class="range">
+      <div class="range-storage">
+        <div class="range-name">
+          <span>Storage:</span>
+          <span class="amount-storange">0GB</span>
+        </div>
+        <input type="range" name="range" id="range-storange" max="1000" step="1">
+      </div>
+      <div class="range-transfer">
+        <div class="range-name">
+          <span>Transfer:</span>
+          <span class="amount-transfer">0GB</span>
+        </div>
+        <input type="range" name="range" id="range-transfer" max="1000" step="1">
+      </div>
+
+    </div>  
+    <div class="providers">
+      <div class="backblaze">
+        <div class="name">
+          <span>backblaze</span>
+          <img src="./image/logo-backblaze.webp" alt="backblaze-logo">
+        </div>
+        <div class="diagram-container">
+          <span class="diagram diagram-backblaze"></span>
+          <span class="price price-backblaze">7$</span>
+        </div>
+      </div>
+      <div class="bunny">
+        <div class="name">
+          <div class="name-params">
+            <span>bunny</span>
+            <div class="params params-bunny">
+              <span class="param active hdd">HDD</span>
+              <span class="param ssd">SSD</span>
+            </div>
+          </div>
+          <img src="./image/bunny.png" alt="bunny-logo">
+        </div>
+        <div class="diagram-container">
+          <span class="diagram diagram-bunny"></span>
+          <span class="price price-bunny">7$</span>
+        </div>
+      </div>
+      <div class="scaleway">
+        <div class="name">
+          <div class="name-params">
+            <span>scaleway</span>
+            <div class="params params-scaleway">
+              <span class="param active multi">Multi</span>
+              <span class="param single">Single</span>
+            </div>
+          </div>
+          <img src="./image/scaleway.png" alt="scaleway-logo">
+        </div>
+        <div class="diagram-container">
+          <span class="diagram diagram-scaleway"></span>
+          <span class="price price-scaleway">7$</span>
+        </div>
+      </div>
+      <div class="vultr">
+        <div class="name">
+          <span>vultr</span>
+          <img src="./image/vultr.png" alt="vultr-logo">
+        </div>
+        <div class="diagram-container">
+          <span class="diagram diagram-vultr"></span>
+          <span class="price price-vultr">7$</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+ 
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

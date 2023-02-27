@@ -1,0 +1,157 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram-providers {
+  margin: 0 auto;
+  width: 650px;
+}
+
+.range {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+.range .range-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+#range-transfer, #range-storange {
+  cursor: pointer;
+  width: 160px;
+}
+
+.providers .name {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
+}
+.providers .name span {
+  font-size: 22px;
+}
+.providers .params span {
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.bunny, .scaleway, .vultr, .backblaze {
+  display: flex;
+  align-items: center;
+}
+.bunny img, .scaleway img, .vultr img, .backblaze img {
+  width: 25px;
+  height: 25px;
+}
+
+.diagram {
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bbbfc2;
+  border-radius: 3px;
+  background-color: #bbbfc2;
+  margin: 0 10px;
+}
+
+.svg-logo__shape-1 {
+  fill: #007bfc;
+}
+.svg-logo__shape-2 {
+  fill: #51b9ff;
+}
+.svg-logo__shape-3 {
+  fill: #000;
+}
+
+.active::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: 4px;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .diagram-providers {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  #range-transfer, #range-storange {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    order: 2;
+  }
+  .providers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: end;
+    height: 600px;
+  }
+  .providers .name {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin-top: 20px;
+  }
+  .providers .name span {
+    display: flex;
+    order: 1;
+  }
+  .providers .name img {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .providers .name .name-params {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .providers .params {
+    display: flex;
+    order: 2;
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  .providers .diagram-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .providers .diagram-container .price {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .diagram {
+    width: 20px;
+    height: 200px;
+    display: flex;
+    order: 2;
+  }
+  .bunny, .scaleway, .vultr, .backblaze {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
